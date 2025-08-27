@@ -1,6 +1,90 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+/* Custom Styles */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  max-width: 20%;
+  border: 1px solid #ffdf11;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: #f5edb6 0px 0px 10px;
+  transition: transform 0.2s;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.pagination {
+  margin: 1rem;
+  button {
+    margin: 0 0.5rem;
+    background-color: black;
+    color: white;
+  }
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.badge {
+  background-color: #f3e069;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.search-bar {
+  margin: 20px;
+  width: 100%;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
