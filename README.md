@@ -29,6 +29,7 @@ Follow these steps to get your environment up and running:
 4. **Start the development server**
     ```bash
     npm run dev
+
 ---
 ## 🧪 Running Tests
 
