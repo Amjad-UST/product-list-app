@@ -1,4 +1,4 @@
-import {trucateText} from "../../utils/common";
+import {trucate} from "../../utils/common";
 import type { Product } from "../../types/product";
 
 type CardProps = {
@@ -8,10 +8,10 @@ type CardProps = {
 //TODO Make it genaric card component
 export default function Card({ product }: CardProps) {
   return (
-    <div className="card">
+    <div className="card" data-testid={`product-card-${product.id}`}>
       <h2 className="card-title">{product.title}</h2>
       <img className="card-image" src={product.thumbnail} alt={product.title} />
-      <p className="card-description">{trucateText(product.description, 30)}</p>
+      <p className="card-description">{trucate(product.description, 30)}</p>
       <p>Price: ${product.price}</p>
     </div>
   )

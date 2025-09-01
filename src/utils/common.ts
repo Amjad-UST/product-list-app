@@ -1,8 +1,5 @@
-function trucateText(text: string, maxLength: number): string {
-  if (text.length <= maxLength) {
-    return text;
-  }
-  return text.slice(0, maxLength) + '...';
+function trucate(text: string, limit: number): string {
+  return text.length > limit ? text.slice(0, limit) + '...' : text;
 }
 
-export { trucateText };
+export { trucate };

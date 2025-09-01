@@ -56,9 +56,14 @@
 .pagination {
   margin: 1rem;
   button {
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     background-color: black;
     color: white;
+  }
+  .active {
+      background-color: #ffdf11;
+      color: black;
+      border: 1px solid black;
   }
 }
 

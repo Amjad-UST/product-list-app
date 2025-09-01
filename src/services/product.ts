@@ -5,8 +5,8 @@ const BASE_URL = import.meta.env.VITE_API_ENDPOINT;
 export const getProduct = async (
   limit: number = 10,
   skip: number = 0,
-  term: string | '' = ''
-): Promise<ProductsResponse> => {
+  term: string,
+): Promise<ProductsResponse | null> => {
   try {
     const response = await fetch(`${BASE_URL}/products/search?q=${term}&limit=${limit}&skip=${skip}`);
     if (!response.ok) {

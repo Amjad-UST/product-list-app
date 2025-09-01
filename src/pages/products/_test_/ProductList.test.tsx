@@ -13,6 +13,10 @@ beforeEach(() => {
 });
 
 describe('ProductList Component', () => {
+  it('shows total products', () => {
+    render(<ProductList />);
+    expect(screen.getByTestId('total-products')).toHaveTextContent('Total Products: 0');
+  });
   it('renders product list from API', async () => {
     vi.spyOn(productService, 'getProduct').mockResolvedValue({
       products: mockProducts,
@@ -91,5 +95,14 @@ describe('ProductList Component', () => {
     await waitFor(() => {
       expect(screen.getByText('Current Page: 1')).toBeInTheDocument();
     });
+  });
+
+  it('resets pagination and product list when API response is falsy', async () => {
+    vi.spyOn(productService, 'getProduct').mockResolvedValue(null);
+
+    render(<ProductList />);
+    await waitFor(() => expect(screen.queryByText(/Loading/i)).not.toBeInTheDocument());
+    expect(screen.getByText(/Total Products: 0/i)).toBeInTheDocument();
+    expect(screen.getByText(/No products available/i)).toBeInTheDocument();
   });
 });

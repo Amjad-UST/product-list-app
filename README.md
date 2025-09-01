@@ -37,9 +37,7 @@ This project uses Vitest and Jest for unit testing. To run the test suite:
 1. **Running Tests**
     ```bash
     npm run test
-2. **Test Coverage**
-    ```bash
-    npm run coverage
+    
 After running, a detailed coverage summary will be available in the terminal, and a full HTML report will be generated in the coverage/ directory.
 
 Make sure your components and utilities are well-tested to maintain high coverage and reliability.
