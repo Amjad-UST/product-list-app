@@ -37,17 +37,16 @@ This project uses Vitest and Jest for unit testing. To run the test suite:
 1. **Running Tests**
     ```bash
     npm run test
-2. **Test Coverage**
-    ```bash
-    npm run coverage
+    
 After running, a detailed coverage summary will be available in the terminal, and a full HTML report will be generated in the coverage/ directory.
 
 Make sure your components and utilities are well-tested to maintain high coverage and reliability.
 
-## 📈 Current Coverage: 100%
-All statements, branches, functions, and lines are covered by tests. Keep this benchmark as you expand the codebase.
+## 📈 Coverage: 
 
----
-## 💡 Tips
+<img width="1914" height="943" alt="Screenshot 2025-08-27 192411" src="https://github.com/user-attachments/assets/02d073f8-1776-4fcf-9a5d-51b9a9befc71" />
 
-Keep your code clean and modular.
+## Screenshots:
+<img width="1920" height="1080" alt="Screenshot 2025-08-27 192831" src="https://github.com/user-attachments/assets/368afbca-5af0-4cb5-a5f8-47b0af254358" />
+
+<img width="1920" height="1008" alt="Screenshot 2025-08-27 193940" src="https://github.com/user-attachments/assets/0a0dc4e2-1413-429a-8e31-326112a4e5a8" />
